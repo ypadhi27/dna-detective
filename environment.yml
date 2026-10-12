@@ -1,0 +1,11 @@
+name: dna-detective
+channels: [conda-forge, bioconda, defaults]
+dependencies:
+  - python=3.11
+  - pandas
+  - numpy
+  - matplotlib
+  - sra-tools
+  - blast
+  - r-base=4.3
+  - bioconductor-dada2

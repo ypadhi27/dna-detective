@@ -1,0 +1,31 @@
+sample,product,label_species,label_fraction,verdict,other_species,total_reads,truth
+S01,turmeric,Curcuma longa,1.0,AUTHENTIC,,21914,AUTHENTIC
+S02,turmeric,Curcuma longa,1.0,AUTHENTIC,,26037,AUTHENTIC
+S03,turmeric,Curcuma longa,1.0,AUTHENTIC,,15000,AUTHENTIC
+S04,turmeric,Curcuma longa,1.0,AUTHENTIC,,22317,AUTHENTIC
+S05,turmeric,Curcuma longa,1.0,AUTHENTIC,,28062,AUTHENTIC
+S06,turmeric,Curcuma longa,0.6567,ADULTERATED,Triticum aestivum (34.3%),16380,ADULTERATED
+S07,turmeric,Curcuma longa,0.7562,ADULTERATED,Zea mays (13.8%); Curcuma zedoaria (10.5%),15424,ADULTERATED
+S08,turmeric,Curcuma longa,0.7314,ADULTERATED,Manihot esculenta (26.9%),24603,ADULTERATED
+S09,turmeric,Curcuma longa,0.0,SUBSTITUTED,Curcuma zedoaria (80.1%); Zea mays (19.9%),20075,SUBSTITUTED
+S10,turmeric,Curcuma longa,0.0116,SUBSTITUTED,Manihot esculenta (98.8%),25734,SUBSTITUTED
+S11,saffron,Crocus sativus,1.0,AUTHENTIC,,30068,AUTHENTIC
+S12,saffron,Crocus sativus,1.0,AUTHENTIC,,13233,AUTHENTIC
+S13,saffron,Crocus sativus,1.0,AUTHENTIC,,36406,AUTHENTIC
+S14,saffron,Crocus sativus,1.0,AUTHENTIC,,16644,AUTHENTIC
+S15,saffron,Crocus sativus,1.0,AUTHENTIC,,14658,AUTHENTIC
+S16,saffron,Crocus sativus,0.8694,ADULTERATED,Zea mays (13.1%),20797,ADULTERATED
+S17,saffron,Crocus sativus,0.8109,ADULTERATED,Curcuma longa (15.3%); Zea mays (3.6%),26448,ADULTERATED
+S18,saffron,Crocus sativus,0.828,ADULTERATED,Curcuma longa (14.2%); Carthamus tinctorius (3.0%),13851,ADULTERATED
+S19,saffron,Crocus sativus,0.0103,SUBSTITUTED,Zea mays (99.0%),10812,SUBSTITUTED
+S20,saffron,Crocus sativus,0.0,SUBSTITUTED,Zea mays (57.3%); Curcuma longa (42.7%),27019,SUBSTITUTED
+S21,black_pepper,Piper nigrum,1.0,AUTHENTIC,,21986,AUTHENTIC
+S22,black_pepper,Piper nigrum,1.0,AUTHENTIC,,14541,AUTHENTIC
+S23,black_pepper,Piper nigrum,1.0,AUTHENTIC,,11803,AUTHENTIC
+S24,black_pepper,Piper nigrum,1.0,AUTHENTIC,,22158,AUTHENTIC
+S25,black_pepper,Piper nigrum,1.0,AUTHENTIC,,19212,AUTHENTIC
+S26,black_pepper,Piper nigrum,0.696,ADULTERATED,Zea mays (30.4%),23039,ADULTERATED
+S27,black_pepper,Piper nigrum,0.8822,ADULTERATED,Carica papaya (11.8%),22454,ADULTERATED
+S28,black_pepper,Piper nigrum,0.6583,ADULTERATED,Zea mays (34.2%),14333,ADULTERATED
+S29,black_pepper,Piper nigrum,0.0,SUBSTITUTED,Carica papaya (100.0%),21857,SUBSTITUTED
+S30,black_pepper,Piper nigrum,0.0116,SUBSTITUTED,Zea mays (98.8%),23820,SUBSTITUTED

@@ -1,0 +1,2 @@
+run_accession	study_accession	secondary_study_accession	sample_accession	library_layout	library_strategy	fastq_ftp
+SRR34060976	PRJNA1279389	SRP593100	SAMN49480680	PAIRED	AMPLICON	ftp.sra.ebi.ac.uk/vol1/fastq/SRR340/076/SRR34060976/SRR34060976_1.fastq.gz;ftp.sra.ebi.ac.uk/vol1/fastq/SRR340/076/SRR34060976/SRR34060976_2.fastq.gz

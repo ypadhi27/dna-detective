@@ -1,0 +1,9 @@
+data/raw/
+results/filtered/
+*.rds
+__pycache__/
+.DS_Store
+
+.venv/
+results/real/filtered/
+data/real/raw/
