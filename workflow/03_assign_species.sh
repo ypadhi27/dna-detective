@@ -4,6 +4,8 @@
 # Build the reference from NCBI/BOLD plus authoritative vouchered sequences (see MANUSCRIPT.md, Limitations).
 set -euo pipefail
 REF=${1:?reference.fasta}; ASV=${2:?results/asvs.fasta}
-makeblastdb -in "$REF" -dbtype nucl -out results/its2_ref
-blastn -query "$ASV" -db results/its2_ref -max_target_seqs 5 -evalue 1e-10 \
-  -outfmt "6 qseqid sseqid pident length qlen bitscore" > results/blast_hits.tsv
+OUT=${3:-results/real}
+mkdir -p "$OUT"
+makeblastdb -in "$REF" -dbtype nucl -out "$OUT/its2_ref"
+blastn -query "$ASV" -db "$OUT/its2_ref" -max_target_seqs 5 -evalue 1e-10 \
+  -outfmt "6 qseqid sseqid pident length qlen bitscore" > "$OUT/blast_hits.tsv"

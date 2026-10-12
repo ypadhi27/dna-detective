@@ -1,0 +1,11 @@
+.venv/bin/python src/preflight.py
+Real-data workflow BLOCKED:
+Missing executable: prefetch
+Missing executable: fasterq-dump
+Missing executable: Rscript
+Missing executable: makeblastdb
+Missing executable: blastn
+No approved runs in data/real/accessions.txt
+Missing curated data/real/its2_reference.fasta
+Missing PRIMERS_VERIFIED.md: document primer removal or verified primer-free input
+make: *** [real] Error 1

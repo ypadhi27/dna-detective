@@ -1,0 +1,2 @@
+# No approved runs. Candidates are in manifest_sources.csv.
+# Verify ITS2-only reads, primers, labels and source paper before adding accessions.

@@ -7,9 +7,9 @@ truth = pd.read_csv("data/simulated_truth.csv")
 classes = ["AUTHENTIC", "ADULTERATED", "SUBSTITUTED"]
 
 res = authenticate(table, manifest).merge(truth, on="sample")
-res.to_csv("results/verdicts.csv", index=False)
+res.to_csv("results/simulated/verdicts.csv", index=False)
 cm = pd.crosstab(res["truth"], res["verdict"]).reindex(index=classes, columns=classes, fill_value=0)
-cm.to_csv("results/confusion_matrix.csv")
+cm.to_csv("results/simulated/confusion_matrix.csv")
 acc = (res["truth"] == res["verdict"]).mean()
 print("Confusion matrix (rows=truth, cols=prediction)\n", cm, f"\nAccuracy: {acc:.3f}")
 
@@ -27,5 +27,5 @@ for nf in [0.0, 0.001, 0.005, 0.01, 0.02, 0.05]:
                      "accuracy": (r["truth"] == r["verdict"]).mean(),
                      "sensitivity": (f & p).sum() / f.sum(),
                      "specificity": (~f & ~p).sum() / (~f).sum()})
-sweep = pd.DataFrame(rows); sweep.to_csv("results/threshold_sweep.csv", index=False)
+sweep = pd.DataFrame(rows); sweep.to_csv("results/simulated/threshold_sweep.csv", index=False)
 print("\nThreshold sweep:\n", sweep.round(3).to_string(index=False))

@@ -1,0 +1,4 @@
+bioproject,run_accession,sample_title,label_species,source_paper,status,metadata_url
+PRJNA1279389,SRR34060952,Sample11_Repeat2_mgi,TODO: verify,TODO: verify,Run and paired amplicon layout verified; marker and product label unresolved,https://www.ebi.ac.uk/ena/browser/view/SRR34060952
+PRJNA1279389,SRR34060953,Sample11_Repeat1_mgi,TODO: verify,TODO: verify,Run and paired amplicon layout verified; marker and product label unresolved,https://www.ebi.ac.uk/ena/browser/view/SRR34060953
+PRJNA1279389,SRR34060955,Sample9_Repeat1_mgi,TODO: verify,TODO: verify,Run and paired amplicon layout verified; marker and product label unresolved,https://www.ebi.ac.uk/ena/browser/view/SRR34060955

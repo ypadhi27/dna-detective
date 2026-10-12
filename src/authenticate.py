@@ -11,6 +11,12 @@ Verdicts
 import argparse, pandas as pd
 
 def authenticate(table, manifest, noise_floor=0.01, adulterant_threshold=0.05, substitution_threshold=0.05):
+    for value in (noise_floor, adulterant_threshold, substitution_threshold):
+        if not 0 <= value <= 1:
+            raise ValueError("Thresholds must be between zero and one")
+    if table["reads"].isna().any() or (table["reads"] < 0).any():
+        raise ValueError("Read counts must be nonnegative and finite")
+    table = table.groupby(["sample", "species"], as_index=False)["reads"].sum()
     out = []
     for _, m in manifest.iterrows():
         t = table[table["sample"] == m["sample"]].copy()
@@ -20,7 +26,9 @@ def authenticate(table, manifest, noise_floor=0.01, adulterant_threshold=0.05, s
         t["rel"] = t["reads"] / t["reads"].sum()  # renormalise
         label_frac = t.loc[t["species"] == m["label_species"], "rel"].sum()
         others = t[t["species"] != m["label_species"]].sort_values("rel", ascending=False)
-        if label_frac < substitution_threshold:
+        if total <= 0 or t.empty or (t["species"] == "Unassigned").any():
+            verdict = "INCONCLUSIVE"
+        elif label_frac < substitution_threshold:
             verdict = "SUBSTITUTED"
         elif label_frac >= 1 - adulterant_threshold:
             verdict = "AUTHENTIC"
