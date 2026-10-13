@@ -1,7 +1,7 @@
 # DNA Detective: A Reproducible ITS2 Metabarcoding Workflow for Detecting Adulteration and Substitution in Spices and Herbal Products
 
-**Author:** <YOUR NAME> · <Your institution / independent researcher> · <email>
-**Repository:** https://github.com/<your-username>/dna-detective
+**Author:** Yajnasenee Padhi
+**Repository:** https://github.com/ypadhi27/dna-detective
 **Status:** Pipeline validation on simulated data. Real-data feasibility assessed; execution blocked (see Real-data case study).
 
 ---
@@ -125,7 +125,7 @@ The 0% false-positive result at a floor as low as 0.1% should **not** be taken a
 ## 7. Reproducibility
 
 ```bash
-git clone https://github.com/<your-username>/dna-detective && cd dna-detective
+git clone https://github.com/ypadhi27/dna-detective && cd dna-detective
 pip install -r requirements.txt
 make demo          # regenerates all simulated data, results and figures
 ```

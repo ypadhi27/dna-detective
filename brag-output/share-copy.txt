@@ -1,0 +1,1 @@
+DNA Detective explores how noise filtering changes botanical authentication. Reproducible simulations, explicit thresholds, and honest limits—real-data validation is still pending. https://github.com/ypadhi27/dna-detective

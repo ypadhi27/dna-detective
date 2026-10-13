@@ -6,6 +6,8 @@
 
 A reproducible research prototype for examining adulteration and substitution in spices and herbal products.
 
+**By Yajnasenee Padhi**
+
 **Python · DADA2 · BLAST+ · Reproducible simulations**
 
 [Manuscript](MANUSCRIPT.md) · [Results](results/simulated/) · [Run log](docs/RUNLOG.md) · [Reference database plan](docs/REFERENCE.md)
@@ -13,6 +15,12 @@ A reproducible research prototype for examining adulteration and substitution in
 </div>
 
 ---
+
+## Project film
+
+[![DNA Detective research film](brag-output/brag.gif)](brag-output/brag.mp4)
+
+[Watch the 24-second film](brag-output/brag.mp4) · [Poster](brag-output/brag.jpg) · [Video source and credits](brag-output/)
 
 ## Research question
 
